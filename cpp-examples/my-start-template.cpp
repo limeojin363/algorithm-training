@@ -2,7 +2,11 @@
 
 using namespace std;
 
-void preset() {}
+int n;
+
+void preset() {
+  cin >> n;
+}
 
 void solve() {}
 
