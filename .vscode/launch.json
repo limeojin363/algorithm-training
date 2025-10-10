@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/algorithm-training/cpp-examples",
-      "program": "/workspaces/algorithm-training/cpp-examples/build/Debug/outDebug",
+      "cwd": "/workspaces/algorithm-training/baekjoon",
+      "program": "/workspaces/algorithm-training/baekjoon/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
