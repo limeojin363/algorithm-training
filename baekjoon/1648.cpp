@@ -4,7 +4,7 @@
 using namespace std;
 
 int n, m;
-int cache[14 * 14][(1 << 15) - 1];
+int cache[14 * 14][(1 << 14) - 1];
 
 int dp(int cell_num, int status) {
     if (cell_num == n * m) return 1;
@@ -12,7 +12,7 @@ int dp(int cell_num, int status) {
     int& ret = cache[cell_num][status];
     if (ret != -1) return ret;
 
-    if (status & (1 << 0)) return ret =  dp(cell_num + 1, status >> 1);
+    if (status & (1 << 0)) return ret = dp(cell_num + 1, status >> 1);
 
     ret = 0;
     // 마지막 행이 아님 -> 수직 놓기 가능
@@ -27,7 +27,7 @@ int dp(int cell_num, int status) {
     // cout << "A " << cell_num << " " << status << "\n";
     // cout << "B " << vertical_ok << " " << horizontal_ok << "\n";
     // cout << "C " << ret << "\n";
-    return ret % 9901;
+    return ret = ret % 9901;
 }
 
 int main() {
